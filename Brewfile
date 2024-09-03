@@ -1,0 +1,52 @@
+brew "git"
+brew "node"
+brew "python"
+brew "awscli"
+brew "yarn"
+brew "docker"
+brew "terraform"
+brew "httpie"
+brew "watchman"
+brew "prettier"
+brew "eslint"
+brew "jq"
+brew "openjdk"
+brew "nginx"
+brew "http-server"
+brew "mkcert" 
+
+cask "visual-studio-code"
+cask "google-chrome"
+cask "warp"
+cask "obsidian"
+cask "arc"
+cask "jetbrains-toolbox"
+cask "chatgpt"
+cask "github"
+cask "gitkraken"
+cask "spark"
+cask "telegram"
+cask "discord"
+cask "postman"
+cask "xcode"
+cask "mongodb-compass"
+cask "firebase-admin"
+cask "transmission"
+cask "steam"
+cask "itch"
+cask "epic-games"
+cask "minecraft"
+cask "imovie"
+cask "garageband"
+cask "viber"
+cask "notion"
+cask "zoom"
+
+brew "font-fira-code", cask: "homebrew/cask-fonts"
+
+post_install() {
+  pip3 install virtualenv
+  pip3 install requests
+  pip3 install flask
+  pip3 install django
+}
