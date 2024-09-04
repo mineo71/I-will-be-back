@@ -43,10 +43,3 @@ cask "notion"
 cask "zoom"
 
 brew "font-fira-code", cask: "homebrew/cask-fonts"
-
-post_install() {
-  pip3 install virtualenv
-  pip3 install requests
-  pip3 install flask
-  pip3 install django
-}
